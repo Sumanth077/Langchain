@@ -1,2 +1,4 @@
 clarifai==9.5.3
 streamlit==1.23.1
+langchain==0.0.229
+openai==0.27.8
