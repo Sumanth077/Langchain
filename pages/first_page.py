@@ -17,11 +17,6 @@ stub = create_stub(auth)
 userDataObject = auth.get_user_app_id_proto()
 lister = ClarifaiResourceLister(stub, auth.user_id, auth.app_id, page_size=16)
 
-
-st.set_page_config(layout="wide")
-
-ClarifaiStreamlitCSS.insert_default_css(st)
-
 st.title("Simple App to get started with Langchain")
 
 with st.sidebar:
