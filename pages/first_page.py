@@ -21,7 +21,7 @@ st.title("🦜 Simple Application to get started with Langchain")
 
 st.sidebar.markdown("Made with UI Modules, a streamlit integration from [Clarifai](https://clarifai.com/) that helps you create and deploy beautiful AI web apps.")
 st.sidebar.image(
-    "https://rasahq.github.io/rasa-nlu-examples/square-logo.svg", width=100
+    "https://clarifai.com/favicon.svg", width=100
 )
 
 with st.sidebar:
