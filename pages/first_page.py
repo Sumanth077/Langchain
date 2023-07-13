@@ -6,7 +6,6 @@ from clarifai.client import create_stub
 from clarifai_utils.modules.css import ClarifaiStreamlitCSS
 from clarifai.listing.lister import ClarifaiResourceLister
 from clarifai.modules.css import ClarifaiStreamlitCSS
-from google.protobuf import json_format, timestamp_pb2
 
 st.set_page_config(layout="wide")
 ClarifaiStreamlitCSS.insert_default_css(st)
