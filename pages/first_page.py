@@ -20,18 +20,14 @@ lister = ClarifaiResourceLister(stub, auth.user_id, auth.app_id, page_size=16)
 st.title("🦜 Simple Application to get started with Langchain")
 
 st.sidebar.markdown("Made with UI Modules, a streamlit integration from [Clarifai](https://clarifai.com/) that helps you create and deploy beautiful AI web apps.")
-st.sidebar.image(
-    "https://clarifai.com/favicon.svg", width=100
-)
+st.sidebar.image("https://clarifai.com/favicon.svg", width=100)
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", type="password")
 
-
 def generate(text):
     llm = OpenAI(temperature=0.8, openai_api_key=openai_api_key)
     st.info(llm(text))
-
 
 with st.form("my_form"):
     text = st.text_area("Enter text:", "What are the potential risks and concerns surrounding AI development?")
@@ -40,4 +36,3 @@ with st.form("my_form"):
         st.info("Please add your OpenAI API key to continue.")
     elif submitted:
         generate(text)
-
